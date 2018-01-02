@@ -5,7 +5,7 @@ def bigger_price(limit, data):
         [{"name": "item_name", "price": x}, etc ]
         return that quantity of the most expensive items in order.
     """
-    
+
     # your code here
     sorted_data = sorted(data, key=lambda x: x['price'], reverse=True)
     return sorted_data[0:limit]
